@@ -8206,6 +8206,8 @@ var isNative = (function (fn) {
   });
 });
 
+let frog4 = 0;
+
 var isBrowser = typeof window !== 'undefined';
 var longerTimeoutBrowsers = ['Edge', 'Trident', 'Firefox'];
 var timeoutDuration = 0;
@@ -10681,7 +10683,6 @@ var Util = function () {
     return false;
   }
 
-  let spider = 0;
 
   function transitionEndEmulator(duration) {
     var _this = this;
@@ -10698,7 +10699,6 @@ var Util = function () {
     return this;
   }
 
-let frog = 0;
 
   function setTransitionEndSupport() {
     transition = transitionEndTest();
