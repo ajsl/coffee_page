@@ -27,7 +27,7 @@ gulp.task('styles', function(callback){
 	gulpSequence('sass', 'minify-css')(callback)
 });
  
-let js_files = ["./js/jquery-3.2.1.slim.js", "./js/popper.js", "./js/bootstrap.js"]
+let js_files = ["./js/jquery-3.2.1.slim.js", "./js/popper.js", "./js/bootstrap.js", "./js/contact.js"]
 
 gulp.task('concat-js', function() {
   return gulp.src(js_files)
