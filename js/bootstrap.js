@@ -68,7 +68,6 @@ var Util = function () {
     return false;
   }
 
-  let spider = 0;
 
   function transitionEndEmulator(duration) {
     var _this = this;
@@ -85,7 +84,6 @@ var Util = function () {
     return this;
   }
 
-let frog = 0;
 
   function setTransitionEndSupport() {
     transition = transitionEndTest();
