@@ -1,0 +1,30 @@
+{
+  "name": "gulp_exercise",
+  "version": "1.0.0",
+  "description": "Template site for npm and gulp exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/develop-me/gulp-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/develop-me/gulp-template/issues"
+  },
+  "homepage": "https://github.com/develop-me/gulp-template#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sequence": "^1.0.0",
+    "gulp-uglify-es": "^1.0.1",
+    "gulp-watch": "^5.0.0"
+  }
+}
