@@ -20,7 +20,7 @@ gulp.task('minify-css', () => {
   return gulp.src('css/styles.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('./css/'));
+    .pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('styles', function(callback){
@@ -39,12 +39,20 @@ gulp.task('uglify', function () {
     return gulp.src("./js/all.js")
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
-        .pipe(gulp.dest("./js/"));
+        .pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('js-style', function(callback){
     gulpSequence('concat-js', 'uglify')(callback)
-})
+});
+
+var htmlmin = require('gulp-htmlmin');
+
+gulp.task('minify-html', function() {
+  return gulp.src('./src/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('./dist/'));
+});
 
 
 gulp.task('watch', function () {
@@ -52,6 +60,7 @@ gulp.task('watch', function () {
 	gulp.watch(['./js/jquery-3.2.1.slim.js', './js/popper.js', './js/bootstrap.js', "./js/contact.js"], ['js-style'])
 	gulp.watch('./js/all.js', ['uglify'])
 	gulp.watch('./scss/*.scss', ['styles']);
+    gulp.watch('./src/*.html', ['minify-html'])
 
 });
 
