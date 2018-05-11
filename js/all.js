@@ -10613,6 +10613,8 @@ return Popper;
 })));
 //# sourceMappingURL=popper.js.map
 
+
+
 /*!
   * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
   * Copyright 2011-2017 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
@@ -14489,3 +14491,47 @@ $(document).ready(function(){
         }
     });    
 });
+
+
+// -----home page---
+
+(d => {
+    let image1 = d.getElementById("image-1");
+    let image2 = d.getElementById("image-2");
+    let image3 = d.getElementById("image-3");
+    let bigimage1 = d.getElementById("image-1a")
+    let bigimage2 = d.getElementById("image-2a")
+    let bigimage3 = d.getElementById("image-3a")
+
+    image1.addEventListener("click", () => {
+      
+        bigimage1.classList.remove("hidden")
+        
+      })
+    image2.addEventListener("click", () => {
+      
+        bigimage2.classList.remove("hidden")
+        
+      })
+    image3.addEventListener("click", () => {
+      
+        bigimage3.classList.remove("hidden")
+        
+      })
+
+    bigimage1.addEventListener("click", () => {
+        bigimage1.classList.add("hidden")
+
+    })
+    bigimage2.addEventListener("click", () => {
+        bigimage2.classList.add("hidden")
+
+    })
+    bigimage3.addEventListener("click", () => {
+        bigimage3.classList.add("hidden")
+
+    })
+
+
+
+})(document);
