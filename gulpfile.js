@@ -50,7 +50,7 @@ gulp.task('js-style', function(callback){
 gulp.task('watch', function () {
 
 	gulp.watch(['./js/jquery-3.2.1.slim.js', './js/popper.js', './js/bootstrap.js', "./js/contact.js"], ['js-style'])
-	// gulp.watch('./js/all.js', ['uglify'])
+	gulp.watch('./js/all.js', ['uglify'])
 	gulp.watch('./scss/*.scss', ['styles']);
 
 });
