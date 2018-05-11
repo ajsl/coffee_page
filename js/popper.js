@@ -43,6 +43,8 @@ var isNative = (function (fn) {
   });
 });
 
+let frog4 = 0;
+
 var isBrowser = typeof window !== 'undefined';
 var longerTimeoutBrowsers = ['Edge', 'Trident', 'Firefox'];
 var timeoutDuration = 0;
