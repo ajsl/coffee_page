@@ -6012,3 +6012,15 @@ body {
   .mastfoot,
   .cover-container {
     width: 42rem; } }
+
+.home-header {
+  margin-top: 20%; }
+
+.home-image {
+  max-height: 250px; }
+
+.home-image-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px 0px 100px 0px; }
