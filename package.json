@@ -1,6 +1,11 @@
 {
   "name": "gulp_exercise",
   "version": "1.0.0",
+  "eslintConfig": {
+    "rules": {
+      "indent": ["warn", 4]
+    }
+  },
   "description": "Template site for npm and gulp exercises",
   "main": "index.js",
   "scripts": {
@@ -22,7 +27,6 @@
     "gulp-clean-css": "^3.9.4",
     "gulp-concat": "^2.6.1",
     "gulp-eslint": "^4.0.2",
-    "gulp-jscs": "^4.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.1",
     "gulp-sequence": "^1.0.0",
