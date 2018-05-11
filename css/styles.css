@@ -6027,11 +6027,10 @@ body {
   margin: 50px 0px 100px 0px; }
 
 .home-big-image {
-  height: 450px;
-  max-width: 90%;
+  width: 90%;
   position: absolute;
   top: 200px;
-  left: 50px; }
+  left: 5%; }
 
 .hidden {
   visibility: hidden; }
