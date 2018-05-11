@@ -20,6 +20,10 @@ a:hover {
 }
 
 
+
+        
+
+
 /*
  * Base structure
  */
@@ -152,7 +156,66 @@ body {
   }
 }
 
-@media (min-width: 62em) {
+/* feature page */
+
+.section-content {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.left-image-gallery {
+  padding:7%;
+  align-self: center;
+
+}
+
+
+
+
+
+.section-content {
+  grid-row: 3 / 4;
+  border: 2px green;
+}
+
+
+.image-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+
+}
+
+.image-gallery img {
+  width: 100%;
+  padding:3%;
+}
+
+
+.left-image-gallery {
+  display: flex;
+  flex-direction: column;
+  max-width: 47.5%;
+  padding:1%;
+
+
+}
+
+
+img:hover {
+  color: orange;
+}
+
+.right-image-gallery {
+  display: flex;
+  flex-direction: column;
+  max-width: 47.5%;
+  padding:1%;
+
+}
+
+@media (min-width: 80em) {
   .masthead,
   .mastfoot,
   .cover-container {
