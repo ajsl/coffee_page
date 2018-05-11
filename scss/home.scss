@@ -1,5 +1,14 @@
+.home-header {
+	margin-top: 20%;
+}
 
-body {
-background-color: red !important;
+.home-image {
+	max-height: 250px;	
+}
+
+.home-image-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 
 }
