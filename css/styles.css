@@ -6015,4 +6015,5 @@ body {
 .home-image-section {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin: 50px 0px 100px 0px; }
